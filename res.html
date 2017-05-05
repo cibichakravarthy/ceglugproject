@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<Title>
+		the unfound kitchen
+		</Title>
+		<style>
+		body {background-image:url("background.jpeg");background-repeat:no-repeat;background-position:center;}
+		li.he{ list-style-type:none;position:center;font-family:Script;font-size:300%;font-style:underline;}
+		li.rate{ list-style-type:none;margin-left:100px;font-family:Script;}
+		</style>
+	</head>
+	<body>
+		
+		<h1 style="text-align:center;font-family:Impact;">Tasty Secrets of India</h1>
+		<ul style="list-style-type:none;margin-left:500px;">
+			<li>
+			<ul>
+				<li  class="he" onclick="functionin()">Idly</li>
+				<li class="rate">Rs 15</li>
+				<li id="demo">quantity</li>
+			</ul>
+			</li>
+			<li>
+			<ul>
+				<li  class="he" onclick="functionin1()">Chappati</li>
+				<li class="rate">Rs 15</li>
+				<li id="dem1">quantity</li>
+			</ul>
+			</li>
+			<li>
+			<ul>
+				<li  class="he" onclick="functionin2()">Poori</li>
+				<li class="rate">Rs 15</li>
+				<li id="dem2">quantity</li>
+			</ul>
+			</li>
+		</ul>
+		<button style="margin-left:500px" onclick="functionin3()">Order!</button>
+						<h2 style="margin-left:500px" id="demo1" > total amount:</h2>
+		<script>
+		var a=0,b=0,c=0,amount=0,d=0;
+		alert("welcome! click on the dish you want to add it to your order");
+		function functionin()
+		{
+		alert("add idly to your order?");
+		document.getElementById("demo").innerHTML="quantity "+(++a);
+		amount+=15;
+		}
+		function functionin1()
+		{
+		alert("add chappati to your order?");
+				amount+=20;
+				document.getElementById("dem1").innerHTML="quantity "+(++b);
+		}
+		function functionin2()
+		{
+		alert("add poori to your order?");
+		document.getElementById("dem2").innerHTML="quantity "+(++c);
+				amount+=25;
+		}
+		function functionin3()
+		{
+		if(!(d++))
+		alert("check your order once and press order again");
+		else
+		document.getElementById("demo1").innerHTML="the total amount is Rs "+amount;
+		}
+		</script>
+	</body>
+</html>
