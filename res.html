@@ -17,21 +17,21 @@
 			<ul>
 				<li  class="he" onclick="functionin()">Idly</li>
 				<li class="rate">Rs 15</li>
-				<li id="demo">quantity</li>
+				<li id="demo">quantity<input type="text" id="in1"></li>
 			</ul>
 			</li>
 			<li>
 			<ul>
 				<li  class="he" onclick="functionin1()">Chappati</li>
-				<li class="rate">Rs 15</li>
-				<li id="dem1">quantity</li>
+				<li class="rate">Rs 20</li>
+				<li id="demo">quantity<input type="text" id="in2"></li>
 			</ul>
 			</li>
 			<li>
 			<ul>
 				<li  class="he" onclick="functionin2()">Poori</li>
-				<li class="rate">Rs 15</li>
-				<li id="dem2">quantity</li>
+				<li class="rate">Rs 25</li>
+				<li id="demo">quantity<input type="text" id="in3"></li>
 			</ul>
 			</li>
 		</ul>
@@ -39,27 +39,23 @@
 						<h2 style="margin-left:500px" id="demo1" > total amount:</h2>
 		<script>
 		var a=0,b=0,c=0,amount=0,d=0;
-		alert("welcome! click on the dish you want to add it to your order");
+		alert("welcome! click on the dish to know more about it");
 		function functionin()
 		{
-		alert("add idly to your order?");
-		document.getElementById("demo").innerHTML="quantity "+(++a);
-		amount+=15;
+		alert("The traditional south indian food that makes no harm to our health.");
 		}
 		function functionin1()
 		{
-		alert("add chappati to your order?");
-				amount+=20;
-				document.getElementById("dem1").innerHTML="quantity "+(++b);
+		alert("The staple food of the north with whole wheat for those who want to have a light meal");
+				
 		}
 		function functionin2()
 		{
-		alert("add poori to your order?");
-		document.getElementById("dem2").innerHTML="quantity "+(++c);
-				amount+=25;
+		alert("soft fluffy poori for those with a good appetite now");
 		}
 		function functionin3()
 		{
+		amount=15*document.getElementById("in1").value+(20*document.getElementById("in2").value)+(25*document.getElementById("in3").value);
 		if(!(d++))
 		alert("check your order once and press order again");
 		else
